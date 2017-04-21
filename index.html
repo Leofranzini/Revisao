@@ -4,17 +4,21 @@
         <meta charset="utf-8">
         <title>Revisão</title>
         <link rel="stylesheet" type="text/css" href="bower_components/monk-grid/flexalign.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body ng-controller="Controller">
         <div class="container wrap-tablet wrap-mobile menu">
-            <div class="flex basis2">
-                <a href="#!/">TESTE</a>
-                <a href="#!/teste">TESTE</a>
-                <button ng-click="teste()">TESSSTE</button>
+            <div class="basis flex">
+                <div class="ops">
+                    <p><a href="#!/produto">Manter Produto</a></p>
+                    <p><a href="#!/pedido">Efetuar Pedido</a></p>
+                    <p><a href="#!/help">Help</a></p>
+                    <p><a href="#!/teste">Teste</a></p>
+                </div>
             </div>
-        </div>
-        <div class="container wrap-tablet wrap-mobile tela">
-            <div class="flex basis5" ng-view>
+            <div class="basis6 flex">
+                <div class="vw" ng-view>
+                </div>
             </div>
         </div>
         

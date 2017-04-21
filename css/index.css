@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.menu {
+    height: 100%;
+    text-align: center;
+}
+
+.ops { 
+    position: relative;
+    padding: 6.9%;
+    height: 92%;
+    background-color: mediumblue;
+}
+
+.ops a {
+    color: white;
+}
+
+.vw {
+    position: relative;
+    padding: 6.9%;
+    height: 80%;
+    background-color: aqua;
+    color: black;
+}
+
+button {
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: firebrick;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: black;
+    transition: 0.5s;
+}
+
+button:active {
+    background-color: forestgreen;
+    color: white;
+    transition: 0.5s;
+    animation: btn 0.5s;
+    transition: 0.5s;
+}
+
+a {
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    color: red;
+    border: none;   
+}
+
+a:hover {
+    color: yellow;
+    transition: 0.5s;
+}
+
+a:active {
+    color: green;
+    transition: 0.5s;
+}
+
+@keyframes btn {
+    0% {
+        padding: 10px;
+    }
+    49% {
+        padding: 10px 20px;
+    }
+    51% {
+        padding: 10px 20px;
+    }
+    100% {
+        padding: 10px;
+    }
+}
+-webkit-@keyframes btn {
+    0% {
+        padding: 10px;
+    }
+    49% {
+        padding: 10px 20px;
+    }
+    51% {
+        padding: 10px 20px;
+    }
+    100% {
+        padding: 10px;
+    } 
+}
+-moz-@keyframes btn {
+    0% {
+        padding: 10px;
+    }
+    49% {
+        padding: 10px 20px;
+    }
+    51% {
+        padding: 10px 20px;
+    }
+    100% {
+        padding: 10px;
+    }
+}
+-o-@keyframes btn {
+    0% {
+        padding: 10px;
+    }
+    49% {
+        padding: 10px 20px;
+    }
+    51% {
+        padding: 10px 20px;
+    }
+    100% {
+        padding: 10px;
+    }
+}
