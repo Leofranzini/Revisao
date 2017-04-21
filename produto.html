@@ -1,1 +1,21 @@
-<h1>PRODUTO</h1>
+<div>
+    <button>Novo</button>
+    <br>
+    <br>
+    <input type="text">
+    <br>
+    <table>
+        <tr>
+            <th>Codigo</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+        <tr ng-repeat="x in produtos">
+            <td>{{$index}}</td>
+            <td>{{x.descricao}}</td>
+            <td>{{x.preco}}</td>
+            <td><a>editar</a><a>excluir</a></td>
+        </tr>
+    </table>
+</div>
