@@ -1,0 +1,17 @@
+{
+  "name": "Revisao",
+  "homepage": "https://github.com/Leofranzini/Revisao",
+  "authors": [
+    "Leonardo Franzini <leo.franzini@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
