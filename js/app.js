@@ -6,7 +6,6 @@ angular
             templateUrl: "/home.html",
             controller: "Controller"
         })
-<<<<<<< HEAD
         
         .when("/produto", {
             templateUrl: "/produto.html",
@@ -25,10 +24,10 @@ angular
     
         .when("/novopedido", {
             templateUrl: "/novopedido.html",
-=======
+        })
+    
         .when("/teste", {
             templateUrl: "/teste.html",
->>>>>>> 68e407e56ad9e1a1a9fee7e625ab6499381c6e3c
             controller: "Controller"
         })
         .otherwise({redirectTo: "/"})
