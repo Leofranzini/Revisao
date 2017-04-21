@@ -1,5 +1,5 @@
 <div>
-    <button>Novo</button>
+    <a href="#!/novoproduto">Novo</a>
     <br>
     <br>
     <input type="text">
@@ -12,10 +12,10 @@
             <th>Ações</th>
         </tr>
         <tr ng-repeat="x in produtos">
-            <td>{{$index}}</td>
+            <td>{{x.id}}</td>
             <td>{{x.descricao}}</td>
             <td>{{x.preco}}</td>
-            <td><a>editar</a><a>excluir</a></td>
+            <td><a>editar</a><a ng-click="excluirProduto($index)">excluir</a></td>
         </tr>
     </table>
 </div>

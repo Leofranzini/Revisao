@@ -4,17 +4,21 @@ angular
     $scope.x = Factory.x;
     $scope.produto = {};
     $scope.produtos = Factory.produtos;
+    $scope.compra = {};
+    $scope.compras = Factory.compras;
     
     $scope.novoProduto = function() {
-        Factory.novoProduto();
+        Factory.novoProduto($scope.produto);
+        $scope.produto = {};
+        $scope.produtos = Factory.produtos;
     }
     
     $scope.editaProduto = function() {
         Factory.editaProduto();
     }
     
-    $scope.excluirProduto = function() {
-        Factory.excluirProduto();
+    $scope.excluirProduto = function(ind) {
+        Factory.excluirProduto(ind);
     }
     
     $scope.cancelarProduto = function() {
