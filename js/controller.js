@@ -2,48 +2,34 @@ angular
     .module('app')
     .controller('Controller', function($scope, Factory) {
     $scope.x = Factory.x;
+    $scope.produto = {};
+    $scope.produtos = Factory.produtos;
     
-    $scope.novo = function() {
-        Factory.novo();
+    $scope.novoProduto = function() {
+        Factory.novoProduto();
     }
     
-    $scope.editar = function() {
-        Factory.editar();
+    $scope.editaProduto = function() {
+        Factory.editaProduto();
     }
     
-    $scope.excluir = function() {
-        Factory.excluir();
+    $scope.excluirProduto = function() {
+        Factory.excluirProduto();
     }
     
-    $scope.salvar = function() {
-        Factory.salvar();
+    $scope.cancelarProduto = function() {
+        console.log("Cancelado");
     }
     
-    $scope.cancelar = function() {
-        Factory.cancelar();
+    $scope.novoCompra = function() {
+        Factory.novoCompra();
     }
     
-    $scope.novo = function() {
-        Factory.novo();
+    $scope.excluirCompra = function() {
+        Factory.excluirCompra();
     }
     
-    $scope.excluir = function() {
-        Factory.excluir();
-    }
-    
-    $scope.incluir = function() {
-        Factory.incluir();
-    }
-    
-     $scope.remover = function() {
-        Factory.remover();
-    }
-    
-    $scope.salvar = function() {
-        Factory.salvar();
-    }
-    
-    $scope.cancelar = function() {
-        Factory.cancelar();
+    $scope.cancelarCompra = function() {
+        console.log("Compra cancelada!");
     }
 })
